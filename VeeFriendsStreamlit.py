@@ -38,7 +38,7 @@ col1.metric('Total Number of Tokens', num_tokens)
 col2.metric('Total Volume (USD', total_volume)
 
 
-fig_scatter = px.scatter(x=[0, 1, 2, 3, 4], y=[0, 1, 4, 9, 16])
+fig_scatter = px.scatter(x=df['date'], y=df['sale_price_usd'])
 st.plotly_chart(fig_scatter)
 
 
